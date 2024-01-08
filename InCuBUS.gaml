@@ -3,6 +3,7 @@
 * Author: Samuel J Beach
 */
 
+
 model InCuBUS
 
 global {
@@ -558,9 +559,6 @@ species female_mosquito parent: mosquito {
 			}
 		}
 	}
-	
-	
-	
 }
 
 species male_mosquito parent: mosquito {
@@ -647,6 +645,3 @@ experiment InCuBUSfsRIDL type: batch repeat: 10 keep_seed: false until: nb_days 
 		monitor Days_since_release value: days_since_release refresh: every(day #cycles);
 	}
 }
-
-
-/* Insert your model definition here */
